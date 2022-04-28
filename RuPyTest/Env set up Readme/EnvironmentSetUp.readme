@@ -1,0 +1,43 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct 29 09:26:42 2020
+
+@author: easixno
+"""
+
+from sys import path
+import os
+
+
+
+CurrentPath = os.getcwd()
+if CurrentPath not in path:
+    path.append(CurrentPath)
+
+'''
+install packate in cmd:     
+    pip install PyVisa          #Instrument Conmunication
+    pip install pyserial          #Serial Conmunication
+    pip install ecdsa           #install before paramiko
+    pip install paramiko        #scp operation
+    pip install scp
+    pip install pythonnet
+	pip install PyUserInput
+	pip install openpyxl
+
+
+    
+import serial.tools.list_ports
+import threading
+import re
+import time
+import skrf  #pip install scikit-rf
+import lxml
+import paramiko  # 用于调用scp命令
+from scp import SCPClient
+
+
+
+
+
+'''
