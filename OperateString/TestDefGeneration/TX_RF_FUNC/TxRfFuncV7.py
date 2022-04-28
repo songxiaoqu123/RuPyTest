@@ -22,6 +22,7 @@ class TxRfFuncConfig:
         self.load_common_config()
         self.load_carrier_limit_table()
         self.carrier_sheets = self.workbook.sheetnames[4::]
+        self.max_power_total = Decimal(self.workbook['CarrierSetup'].cell(row=6, column=2).value)
 
 
 
@@ -196,29 +197,35 @@ class TxRfFuncConfig:
                 row_data = list(filter(None, row_data))
                 carrier_dict={}
                 carrier_dict['commont'] = row_data[1]
-                row_data = list(worksheet.iter_rows(current_row, current_row, worksheet.min_column, worksheet.max_column, True))[0]
-                row_data = list(filter(None, row_data))
+                carrier_name = list(worksheet.iter_rows(current_row, current_row, worksheet.min_column, worksheet.max_column, True))[0]
+                carrier_name = list(filter(None, carrier_name))
                 current_row = current_row + 1
-                carrier_dict['carrier_type'] = row_data
+                carrier_dict['carrier_type'] = carrier_name
 
-                row_data = list(worksheet.iter_rows(current_row, current_row, worksheet.min_column, worksheet.max_column, True))[0]
-                row_data = list(filter(None, row_data))
+                carrier_testmod = list(worksheet.iter_rows(current_row, current_row, worksheet.min_column, worksheet.max_column, True))[0]
+                carrier_testmod = list(filter(None, carrier_testmod))
                 current_row = current_row + 1
-                carrier_dict['test_mod'] = row_data
+                carrier_dict['test_mod'] = carrier_testmod
 
-                row_data = list(worksheet.iter_rows(current_row, current_row, worksheet.min_column, worksheet.max_column, True))[0]
-                row_data = list(filter(None, row_data))
+
+
+                carrier_power = list(worksheet.iter_rows(current_row, current_row, worksheet.min_column, worksheet.max_column, True))[0]
+                carrier_power = list(filter(None, carrier_power))
                 current_row = current_row + 1
-                carrier_dict['power_backoff'] = row_data
+                backoff_power = []
+                for i in range(len(carrier_power)):
+                    if carrier_name[i] == 'L4' and self.max_power_total/(len(carrier_power))*pow(10, Decimal(carrier_power[i].strip('dB')))>20:
+                        carrier_power[i] = '20W'
 
-                row_data = list(worksheet.iter_rows(current_row, current_row, worksheet.min_column, worksheet.max_column, True))[0]
+                carrier_dict['power_backoff'] = carrier_power
 
+                carrier_freq = list(worksheet.iter_rows(current_row, current_row, worksheet.min_column, worksheet.max_column, True))[0]
                 carrier_dict['freq'] = []
-                while(row_data[0]==None and row_data[1]):
-                    row_data = list(filter(None, row_data))
-                    carrier_dict['freq'].append(row_data)
+                while(carrier_freq[0]==None and carrier_freq[1]):
+                    carrier_freq = list(filter(None, carrier_freq))
+                    carrier_dict['freq'].append(carrier_freq)
                     current_row = current_row + 1
-                    row_data = list(worksheet.iter_rows(current_row, current_row, worksheet.min_column, worksheet.max_column,True))[0]
+                    carrier_freq = list(worksheet.iter_rows(current_row, current_row, worksheet.min_column, worksheet.max_column,True))[0]
 
                 carrier_config = carrier_dict
 
@@ -276,14 +283,7 @@ class TxRfFuncConfig:
 
     def correct_backoff_power(self,carrier_comb_narrow, carrier_comb):
         for i in range(len(carrier_comb_narrow)):
-            if carrier_comb_narrow[i]['carrier_name'] =='L4':
-                carrier_power  = self.max_power_total/(len(carrier_comb_narrow)+len(carrier_comb))*pow(10, carrier_comb_narrow[i]['carrier_backoff'])
-                if carrier_power > 20:
-                    carrier_comb_narrow[i]['carrier_backoff'] = '20W'
-                else:
-                    carrier_comb_narrow[i]['carrier_backoff'] = '{}dB'.format(carrier_comb_narrow[i]['carrier_backoff'])
-            else:
-                carrier_comb_narrow[i]['carrier_backoff'] = '{}dB'.format(carrier_comb_narrow[i]['carrier_backoff'])
+            carrier_comb_narrow[i]['carrier_backoff'] = '{}dB'.format(carrier_comb_narrow[i]['carrier_backoff'])
         for i in range(len(carrier_comb)):
             carrier_comb[i]['carrier_backoff'] = '{}dB'.format(carrier_comb[i]['carrier_backoff'])
         return carrier_comb_narrow,carrier_comb
@@ -412,10 +412,7 @@ class TxRfFuncConfig:
             worksheet_out.cell(row=current_row, column=current_col).value = carrier_setup_narrow[i1]['carrier_testmod']
             current_row += 1
             p = self.max_power_total*pow(10, carrier_setup_narrow[i1]['carrier_backoff']/10)
-            if p > 20 and carrier_setup_narrow[i1]['carrier_name'] =='L4':
-                worksheet_out.cell(row=current_row, column=current_col).value = '20W'
-            else:
-                worksheet_out.cell(row=current_row, column=current_col).value = '{}dB'.format(carrier_setup_narrow[i1]['carrier_backoff'])
+            worksheet_out.cell(row=current_row, column=current_col).value = '{}dB'.format(carrier_setup_narrow[i1]['carrier_backoff'])
             current_row += 1
             worksheet_out.cell(row=current_row, column=current_col).value = '{}M'.format(self.freq_l + bw / 2)
             current_row += 1
@@ -627,7 +624,7 @@ class TxRfFuncConfig:
 
 
 if __name__ == '__main__':
-    tx_rf_func: TxRfFuncConfig = TxRfFuncConfig('D:\RuPyTest_P1A03\OperateString\TestDefGeneration\TX_RF_FUNC\TxRfFunc_Config_V7.xlsx')
+    tx_rf_func: TxRfFuncConfig = TxRfFuncConfig('D:\RuPyTest_P1A03\OperateString\TestDefGeneration\TX_RF_FUNC\Pamukkale_R1B_Regression.xlsx')
     #tx_rf_func.gen_carrier_combination()
     for worksheet in tx_rf_func.carrier_sheets:
         tx_rf_func.gen_carriers_TxRfFunc(worksheet)
