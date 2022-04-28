@@ -1,0 +1,1422 @@
+2022-01-28 15:20:59,015  |DEBUG   |Test log initialized.
+
+2022-01-28 15:21:01,625  |DEBUG   |GPIB0::1::INSTR                          |Initialized.
+2022-01-28 15:21:01,776  |INFO    |COM12 is opened
+2022-01-28 15:21:01,776  |INFO    |Send to RU: b'trdc setup3 1 0 1 758000 0 0 -30 10000 0 0 -30 1 0 0 15360 1 0 1 1 0 0\n\r'
+2022-01-28 15:21:01,881  |INFO    |Read from COM12:
+trdc setup3 1 0 1 758000 0 0 -30 10000 0 0 -30 1 0 0 15360 1 0 1 1 0 0
+
+
+Deprecated command with default serverRef used only for single mode
+DC_TR_SETUP3_REQ: deviceId=1
+DC_TR_SETUP3_REQ: addressInfo.serverRef=50
+DC_TR_SETUP3_REQ: addressInfo.clientRef=1
+DC_TR_SETUP3_REQ: ratType=0
+DC_TR_SETUP3_REQ: receiveTransmit=1
+DC_TR_SETUP3_REQ: carrierFrequency=758000
+DC_TR_SETUP3_REQ: arfcnMin=0
+DC_TR_SETUP3_REQ: arfcnMax=0
+DC_TR_SETUP3_REQ: txCarrierPowerAllocation=-30
+DC_TR_SETUP3_REQ: carrierBandwidth=10000
+DC_TR_SETUP3_REQ: frameStartOffset=0
+DC_TR_SETUP3_REQ: setupRfPort=0
+DC_TR_SETUP3_REQ: txCarrierGainSetting=-30
+DC_TR_SETUP3_REQ: subBandFunctionOn=1
+DC_TR_SETUP3_REQ: bbSampleRate=15360
+DC_TR_SETUP3_REQ: numberOfSetupCpriLinks=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].cpriPort=0
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcId=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcIdRxControl=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].iqPosition=0
+DC_TR_SETUP3_REQ: cpriLinkArray[0].bfOffset=0
+
+Req itc_msg, AddressInfo: serverRef=50
+SendAndCheckAndPrintResult REJECT 
+AddressInfo: clientRef=1, serverRef=50
+reject by trDC: TR_SETUP_REQ received in wrong state (other than idle) (errorCode=1)
+
+$ 
+2022-01-28 15:21:01,882  |INFO    |Send to RU: b'trdc setup3 2 0 0 730500 0 0 0 5000 0 0 0 1 0 0 7680 1 0 11 1 0 0\n\r'
+2022-01-28 15:21:01,993  |INFO    |Read from COM12:
+trdc setup3 2 0 0 730500 0 0 0 5000 0 0 0 1 0 0 7680 1 0 11 1 0 0
+
+
+Deprecated command with default serverRef used only for single mode
+DC_TR_SETUP3_REQ: deviceId=2
+DC_TR_SETUP3_REQ: addressInfo.serverRef=50
+DC_TR_SETUP3_REQ: addressInfo.clientRef=2
+DC_TR_SETUP3_REQ: ratType=0
+DC_TR_SETUP3_REQ: receiveTransmit=0
+DC_TR_SETUP3_REQ: carrierFrequency=730500
+DC_TR_SETUP3_REQ: arfcnMin=0
+DC_TR_SETUP3_REQ: arfcnMax=0
+DC_TR_SETUP3_REQ: txCarrierPowerAllocation=0
+DC_TR_SETUP3_REQ: carrierBandwidth=5000
+DC_TR_SETUP3_REQ: frameStartOffset=0
+DC_TR_SETUP3_REQ: setupRfPort=0
+DC_TR_SETUP3_REQ: txCarrierGainSetting=0
+DC_TR_SETUP3_REQ: subBandFunctionOn=1
+DC_TR_SETUP3_REQ: bbSampleRate=7680
+DC_TR_SETUP3_REQ: numberOfSetupCpriLinks=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].cpriPort=0
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcId=11
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcIdRxControl=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].iqPosition=0
+DC_TR_SETUP3_REQ: cpriLinkArray[0].bfOffset=0
+
+Req itc_msg, AddressInfo: serverRef=50
+SendAndCheckAndPrintResult REJECT 
+AddressInfo: clientRef=2, serverRef=50
+reject by trDC: TR_SETUP_REQ received in wrong state (other than idle) (errorCode=1)
+
+$ 
+2022-01-28 15:21:01,993  |INFO    |Send to RU: b'trdc setup3 3 0 1 783000 0 0 -30 10000 0 0 -30 1 0 0 15360 1 0 1 1 4 0\n\r'
+2022-01-28 15:21:02,101  |INFO    |Read from COM12:
+trdc setup3 3 0 1 783000 0 0 -30 10000 0 0 -30 1 0 0 15360 1 0 1 1 4 0
+
+
+Deprecated command with default serverRef used only for single mode
+DC_TR_SETUP3_REQ: deviceId=3
+DC_TR_SETUP3_REQ: addressInfo.serverRef=50
+DC_TR_SETUP3_REQ: addressInfo.clientRef=3
+DC_TR_SETUP3_REQ: ratType=0
+DC_TR_SETUP3_REQ: receiveTransmit=1
+DC_TR_SETUP3_REQ: carrierFrequency=783000
+DC_TR_SETUP3_REQ: arfcnMin=0
+DC_TR_SETUP3_REQ: arfcnMax=0
+DC_TR_SETUP3_REQ: txCarrierPowerAllocation=-30
+DC_TR_SETUP3_REQ: carrierBandwidth=10000
+DC_TR_SETUP3_REQ: frameStartOffset=0
+DC_TR_SETUP3_REQ: setupRfPort=0
+DC_TR_SETUP3_REQ: txCarrierGainSetting=-30
+DC_TR_SETUP3_REQ: subBandFunctionOn=1
+DC_TR_SETUP3_REQ: bbSampleRate=15360
+DC_TR_SETUP3_REQ: numberOfSetupCpriLinks=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].cpriPort=0
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcId=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcIdRxControl=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].iqPosition=4
+DC_TR_SETUP3_REQ: cpriLinkArray[0].bfOffset=0
+
+Req itc_msg, AddressInfo: serverRef=50
+SendAndCheckAndPrintResult REJECT 
+AddressInfo: clientRef=3, serverRef=50
+reject by trDC: TR_SETUP_REQ received in wrong state (other than idle) (errorCode=1)
+
+$ 
+2022-01-28 15:21:02,102  |INFO    |Send to RU: b'trdc setup3 4 0 0 725500 0 0 0 5000 0 0 0 1 0 0 7680 1 0 11 1 2 0\n\r'
+2022-01-28 15:21:02,211  |INFO    |Read from COM12:
+trdc setup3 4 0 0 725500 0 0 0 5000 0 0 0 1 0 0 7680 1 0 11 1 2 0
+
+
+Deprecated command with default serverRef used only for single mode
+DC_TR_SETUP3_REQ: deviceId=4
+DC_TR_SETUP3_REQ: addressInfo.serverRef=50
+DC_TR_SETUP3_REQ: addressInfo.clientRef=4
+DC_TR_SETUP3_REQ: ratType=0
+DC_TR_SETUP3_REQ: receiveTransmit=0
+DC_TR_SETUP3_REQ: carrierFrequency=725500
+DC_TR_SETUP3_REQ: arfcnMin=0
+DC_TR_SETUP3_REQ: arfcnMax=0
+DC_TR_SETUP3_REQ: txCarrierPowerAllocation=0
+DC_TR_SETUP3_REQ: carrierBandwidth=5000
+DC_TR_SETUP3_REQ: frameStartOffset=0
+DC_TR_SETUP3_REQ: setupRfPort=0
+DC_TR_SETUP3_REQ: txCarrierGainSetting=0
+DC_TR_SETUP3_REQ: subBandFunctionOn=1
+DC_TR_SETUP3_REQ: bbSampleRate=7680
+DC_TR_SETUP3_REQ: numberOfSetupCpriLinks=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].cpriPort=0
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcId=11
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcIdRxControl=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].iqPosition=2
+DC_TR_SETUP3_REQ: cpriLinkArray[0].bfOffset=0
+
+Req itc_msg, AddressInfo: serverRef=50
+SendAndCheckAndPrintResult REJECT 
+AddressInfo: clientRef=4, serverRef=50
+reject by trDC: TR_SETUP_REQ received in wrong state (other than idle) (errorCode=1)
+
+$ 
+2022-01-28 15:21:02,212  |INFO    |Send to RU: b'trdc setup3 5 0 1 758000 0 0 -30 10000 0 1 -30 1 0 0 15360 1 0 1 1 8 0\n\r'
+2022-01-28 15:21:02,322  |INFO    |Read from COM12:
+trdc setup3 5 0 1 758000 0 0 -30 10000 0 1 -30 1 0 0 15360 1 0 1 1 8 0
+
+
+Deprecated command with default serverRef used only for single mode
+DC_TR_SETUP3_REQ: deviceId=5
+DC_TR_SETUP3_REQ: addressInfo.serverRef=50
+DC_TR_SETUP3_REQ: addressInfo.clientRef=5
+DC_TR_SETUP3_REQ: ratType=0
+DC_TR_SETUP3_REQ: receiveTransmit=1
+DC_TR_SETUP3_REQ: carrierFrequency=758000
+DC_TR_SETUP3_REQ: arfcnMin=0
+DC_TR_SETUP3_REQ: arfcnMax=0
+DC_TR_SETUP3_REQ: txCarrierPowerAllocation=-30
+DC_TR_SETUP3_REQ: carrierBandwidth=10000
+DC_TR_SETUP3_REQ: frameStartOffset=0
+DC_TR_SETUP3_REQ: setupRfPort=1
+DC_TR_SETUP3_REQ: txCarrierGainSetting=-30
+DC_TR_SETUP3_REQ: subBandFunctionOn=1
+DC_TR_SETUP3_REQ: bbSampleRate=15360
+DC_TR_SETUP3_REQ: numberOfSetupCpriLinks=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].cpriPort=0
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcId=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcIdRxControl=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].iqPosition=8
+DC_TR_SETUP3_REQ: cpriLinkArray[0].bfOffset=0
+
+Req itc_msg, AddressInfo: serverRef=50
+SendAndCheckAndPrintResult REJECT 
+AddressInfo: clientRef=5, serverRef=50
+reject by trDC: TR_SETUP_REQ received in wrong state (other than idle) (errorCode=1)
+
+$ 
+2022-01-28 15:21:02,322  |INFO    |Send to RU: b'trdc setup3 6 0 0 730500 0 0 0 5000 0 1 0 1 0 0 7680 1 0 11 1 4 0\n\r'
+2022-01-28 15:21:02,433  |INFO    |Read from COM12:
+trdc setup3 6 0 0 730500 0 0 0 5000 0 1 0 1 0 0 7680 1 0 11 1 4 0
+
+
+2022-01-28 15:21:02,541  |INFO    |Read from COM12:
+
+Deprecated command with default serverRef used only for single mode
+DC_TR_SETUP3_REQ: deviceId=6
+DC_TR_SETUP3_REQ: addressInfo.serverRef=50
+DC_TR_SETUP3_REQ: addressInfo.clientRef=6
+DC_TR_SETUP3_REQ: ratType=0
+DC_TR_SETUP3_REQ: receiveTransmit=0
+DC_TR_SETUP3_REQ: carrierFrequency=730500
+DC_TR_SETUP3_REQ: arfcnMin=0
+DC_TR_SETUP3_REQ: arfcnMax=0
+DC_TR_SETUP3_REQ: txCarrierPowerAllocation=0
+DC_TR_SETUP3_REQ: carrierBandwidth=5000
+DC_TR_SETUP3_REQ: frameStartOffset=0
+DC_TR_SETUP3_REQ: setupRfPort=1
+DC_TR_SETUP3_REQ: txCarrierGainSetting=0
+DC_TR_SETUP3_REQ: subBandFunctionOn=1
+DC_TR_SETUP3_REQ: bbSampleRate=7680
+DC_TR_SETUP3_REQ: numberOfSetupCpriLinks=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].cpriPort=0
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcId=11
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcIdRxControl=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].iqPosition=4
+DC_TR_SETUP3_REQ: cpriLinkArray[0].bfOffset=0
+
+Req itc_msg, AddressInfo: serverRef=50
+SendAndCheckAndPrintResult REJECT 
+AddressInfo: clientRef=6, serverRef=50
+reject by trDC: TR_SETUP_REQ received in wrong state (other than idle) (errorCode=1)
+
+$ 
+2022-01-28 15:21:02,542  |INFO    |Send to RU: b'trdc setup3 7 0 1 783000 0 0 -30 10000 0 1 -30 1 0 0 15360 1 0 1 1 12 0\n\r'
+2022-01-28 15:21:02,650  |INFO    |Read from COM12:
+trdc setup3 7 0 1 783000 0 0 -30 10000 0 1 -30 1 0 0 15360 1 0 1 1 12 0
+
+
+Deprecated command with default serverRef used only for single mode
+DC_TR_SETUP3_REQ: deviceId=7
+DC_TR_SETUP3_REQ: addressInfo.serverRef=50
+DC_TR_SETUP3_REQ: addressInfo.clientRef=7
+DC_TR_SETUP3_REQ: ratType=0
+DC_TR_SETUP3_REQ: receiveTransmit=1
+DC_TR_SETUP3_REQ: carrierFrequency=783000
+DC_TR_SETUP3_REQ: arfcnMin=0
+DC_TR_SETUP3_REQ: arfcnMax=0
+DC_TR_SETUP3_REQ: txCarrierPowerAllocation=-30
+DC_TR_SETUP3_REQ: carrierBandwidth=10000
+DC_TR_SETUP3_REQ: frameStartOffset=0
+DC_TR_SETUP3_REQ: setupRfPort=1
+DC_TR_SETUP3_REQ: txCarrierGainSetting=-30
+DC_TR_SETUP3_REQ: subBandFunctionOn=1
+DC_TR_SETUP3_REQ: bbSampleRate=15360
+DC_TR_SETUP3_REQ: numberOfSetupCpriLinks=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].cpriPort=0
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcId=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcIdRxControl=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].iqPosition=12
+DC_TR_SETUP3_REQ: cpriLinkArray[0].bfOffset=0
+
+Req itc_msg, AddressInfo: serverRef=50
+SendAndCheckAndPrintResult REJECT 
+AddressInfo: clientRef=7, serverRef=50
+reject by trDC: TR_SETUP_REQ received in wrong state (other than idle) (errorCode=1)
+
+$ 
+2022-01-28 15:21:02,650  |INFO    |Send to RU: b'trdc setup3 8 0 0 725500 0 0 0 5000 0 1 0 1 0 0 7680 1 0 11 1 6 0\n\r'
+2022-01-28 15:21:02,759  |INFO    |Read from COM12:
+trdc setup3 8 0 0 725500 0 0 0 5000 0 1 0 1 0 0 7680 1 0 11 1 6 0
+
+
+Deprecated command with default serverRef used only for single mode
+DC_TR_SETUP3_REQ: deviceId=8
+DC_TR_SETUP3_REQ: addressInfo.serverRef=50
+DC_TR_SETUP3_REQ: addressInfo.clientRef=8
+DC_TR_SETUP3_REQ: ratType=0
+DC_TR_SETUP3_REQ: receiveTransmit=0
+DC_TR_SETUP3_REQ: carrierFrequency=725500
+DC_TR_SETUP3_REQ: arfcnMin=0
+DC_TR_SETUP3_REQ: arfcnMax=0
+DC_TR_SETUP3_REQ: txCarrierPowerAllocation=0
+DC_TR_SETUP3_REQ: carrierBandwidth=5000
+DC_TR_SETUP3_REQ: frameStartOffset=0
+DC_TR_SETUP3_REQ: setupRfPort=1
+DC_TR_SETUP3_REQ: txCarrierGainSetting=0
+DC_TR_SETUP3_REQ: subBandFunctionOn=1
+DC_TR_SETUP3_REQ: bbSampleRate=7680
+DC_TR_SETUP3_REQ: numberOfSetupCpriLinks=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].cpriPort=0
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcId=11
+DC_TR_SETUP3_REQ: cpriLinkArray[0].axcIdRxControl=1
+DC_TR_SETUP3_REQ: cpriLinkArray[0].iqPosition=6
+DC_TR_SETUP3_REQ: cpriLinkArray[0].bfOffset=0
+
+Req itc_msg, AddressInfo: serverRef=50
+SendAndCheckAndPrintResult REJECT 
+AddressInfo: clientRef=8, serverRef=50
+reject by trDC: TR_SETUP_REQ received in wrong state (other than idle) (errorCode=1)
+
+$ 
+2022-01-28 15:21:02,759  |INFO    |Send to RU: b'trdc on 2\n\r'
+2022-01-28 15:21:02,870  |INFO    |Read from COM12:
+trdc on 2
+
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+SendAndCheckAndPrintResult REJECT 
+AddressInfo: clientRef=2, serverRef=50
+reject by trDC: TR_ACTIVATE_REQ received in wrong state (other then busy/deactivated) (errorCode=1)
+
+$ 
+2022-01-28 15:21:02,870  |INFO    |Send to RU: b'trdc on 4\n\r'
+2022-01-28 15:21:02,979  |INFO    |Read from COM12:
+trdc on 4
+
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+SendAndCheckAndPrintResult REJECT 
+AddressInfo: clientRef=4, serverRef=50
+reject by trDC: TR_ACTIVATE_REQ received in wrong state (other then busy/deactivated) (errorCode=1)
+
+$ 
+2022-01-28 15:21:02,979  |INFO    |Send to RU: b'trdc on 6\n\r'
+2022-01-28 15:21:03,090  |INFO    |Read from COM12:
+trdc on 6
+
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+SendAndCheckAndPrintResult REJECT 
+AddressInfo: clientRef=6, serverRef=50
+reject by trDC: TR_ACTIVATE_REQ received in wrong state (other then busy/deactivated) (errorCode=1)
+
+$ 
+2022-01-28 15:21:03,091  |INFO    |Send to RU: b'trdc on 8\n\r'
+2022-01-28 15:21:03,198  |INFO    |Read from COM12:
+trdc on 8
+
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+SendAndCheckAndPrintResult REJECT 
+AddressInfo: clientRef=8, serverRef=50
+reject by trDC: TR_ACTIVATE_REQ received in wrong state (other then busy/deactivated) (errorCode=1)
+
+$ 
+2022-01-28 15:21:06,211  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:06,320  |INFO    |Read from COM12:
+ts r Rx:A
+
+
+2022-01-28 15:21:06,428  |INFO    |Read from COM12:
+28.5
+
+$ 
+2022-01-28 15:21:06,428  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:06,537  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+
+2022-01-28 15:21:06,646  |INFO    |Read from COM12:
+ipwr:
+FBG_0_0:0 :  46.210 dB
+FBG_0_0:1 :  45.978 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  46.088 dB
+FBG_1_0:1 :  45.921 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+
+2022-01-28 15:21:06,754  |INFO    |Read from COM12:
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x00724E0F (28.92 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x0075200F (29.03 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x0067F810 (31.52 dB)
+MCB_POST_CB_1_0_1: Power = 0x006A2510 (31.61 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+$ 
+2022-01-28 15:21:07,256  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:07,366  |INFO    |Read from COM12:
+ts r Rx:A
+
+
+2022-01-28 15:21:07,477  |INFO    |Read from COM12:
+28
+
+$ 
+2022-01-28 15:21:07,478  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:07,587  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+ipwr:
+
+2022-01-28 15:21:07,696  |INFO    |Read from COM12:
+FBG_0_0:0 :  46.172 dB
+FBG_0_0:1 :  46.014 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  46.142 dB
+FBG_1_0:1 :  45.931 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x0071BE0F (28.90 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x0075A20F (29.05 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x0067CC90 (31.51 dB)
+MCB_POST_CB_1_0_1: Power = 0x006AE510 (31.64 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+$ 
+2022-01-28 15:21:08,210  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:08,322  |INFO    |Read from COM12:
+ts r Rx:A
+
+
+2022-01-28 15:21:08,433  |INFO    |Read from COM12:
+28
+
+$ 
+2022-01-28 15:21:08,433  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:08,542  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+ipwr:
+
+2022-01-28 15:21:08,653  |INFO    |Read from COM12:
+FBG_0_0:0 :  46.161 dB
+FBG_0_0:1 :  45.989 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  46.121 dB
+FBG_1_0:1 :  45.961 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x00734E8F (28.96 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x0075A68F (29.05 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x00684D10 (31.54 dB)
+MCB_POST_CB_1_0_1: Power = 0x006B2E10 (31.65 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+$ 
+2022-01-28 15:21:09,156  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:09,265  |INFO    |Read from COM12:
+ts r Rx:A
+
+
+2022-01-28 15:21:09,377  |INFO    |Read from COM12:
+28
+
+$ 
+2022-01-28 15:21:09,377  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:09,486  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+
+2022-01-28 15:21:09,596  |INFO    |Read from COM12:
+ipwr:
+FBG_0_0:0 :  46.166 dB
+FBG_0_0:1 :  46.041 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  46.145 dB
+FBG_1_0:1 :  45.961 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+
+2022-01-28 15:21:09,705  |INFO    |Read from COM12:
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x00719D8F (28.90 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x0075780F (29.04 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x00679510 (31.51 dB)
+MCB_POST_CB_1_0_1: Power = 0x006B0290 (31.65 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+$ 
+2022-01-28 15:21:10,207  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:10,317  |INFO    |Read from COM12:
+ts r Rx:A
+
+
+2022-01-28 15:21:10,428  |INFO    |Read from COM12:
+28.5
+
+$ 
+2022-01-28 15:21:10,428  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:10,540  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+ipwr:
+
+2022-01-28 15:21:10,649  |INFO    |Read from COM12:
+FBG_0_0:0 :  46.135 dB
+FBG_0_0:1 :  46.026 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  46.150 dB
+FBG_1_0:1 :  45.948 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x0072328F (28.92 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x00757F0F (29.04 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x0067FA10 (31.52 dB)
+MCB_POST_CB_1_0_1: Power = 0x006AEE10 (31.64 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+$ 
+2022-01-28 15:21:11,155  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:11,265  |INFO    |Read from COM12:
+ts r Rx:A
+
+
+2022-01-28 15:21:11,372  |INFO    |Read from COM12:
+28.5
+
+$ 
+2022-01-28 15:21:11,373  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:11,481  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+
+2022-01-28 15:21:11,590  |INFO    |Read from COM12:
+ipwr:
+FBG_0_0:0 :  46.227 dB
+FBG_0_0:1 :  46.011 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  46.144 dB
+FBG_1_0:1 :  45.937 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+
+2022-01-28 15:21:11,701  |INFO    |Read from COM12:
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x0072118F (28.91 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x0075AE0F (29.05 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x0067E710 (31.52 dB)
+MCB_POST_CB_1_0_1: Power = 0x006B0C90 (31.65 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+$ 
+2022-01-28 15:21:12,216  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:12,327  |INFO    |Read from COM12:
+ts r Rx:A
+
+
+2022-01-28 15:21:12,438  |INFO    |Read from COM12:
+28.5
+
+$ 
+2022-01-28 15:21:12,438  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:12,547  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+
+2022-01-28 15:21:12,659  |INFO    |Read from COM12:
+ipwr:
+
+2022-01-28 15:21:12,768  |INFO    |Read from COM12:
+FBG_0_0:0 :  46.183 dB
+FBG_0_0:1 :  45.998 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  46.143 dB
+FBG_1_0:1 :  45.923 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x00722F8F (28.92 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x0075BD8F (29.05 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x00680F90 (31.53 dB)
+MCB_POST_CB_1_0_1: Power = 0x006B1790 (31.65 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+$ 
+2022-01-28 15:21:13,274  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:13,383  |INFO    |Read from COM12:
+ts r Rx:A
+
+
+2022-01-28 15:21:13,493  |INFO    |Read from COM12:
+28
+
+$ 
+2022-01-28 15:21:13,493  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:13,603  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+
+2022-01-28 15:21:13,712  |INFO    |Read from COM12:
+ipwr:
+FBG_0_0:0 :  46.202 dB
+FBG_0_0:1 :  45.968 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  46.144 dB
+FBG_1_0:1 :  45.945 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x0072E98F (28.95 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x00753F8F (29.03 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x00681790 (31.53 dB)
+MCB_POST_CB_1_0_1: Power = 0x006B4110 (31.66 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+2022-01-28 15:21:13,821  |INFO    |Read from COM12:
+
+$ 
+2022-01-28 15:21:14,327  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:14,437  |INFO    |Read from COM12:
+ts r Rx:A
+
+28
+
+$ 
+2022-01-28 15:21:14,437  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:14,547  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+
+2022-01-28 15:21:14,655  |INFO    |Read from COM12:
+ipwr:
+FBG_0_0:0 :  46.185 dB
+FBG_0_0:1 :  45.983 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  46.120 dB
+FBG_1_0:1 :  45.939 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+
+2022-01-28 15:21:14,764  |INFO    |Read from COM12:
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x0071A58F (28.90 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x00760F8F (29.06 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x0067C010 (31.51 dB)
+MCB_POST_CB_1_0_1: Power = 0x006B5D10 (31.66 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+$ 
+2022-01-28 15:21:15,282  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:15,393  |INFO    |Read from COM12:
+ts r Rx:A
+
+
+2022-01-28 15:21:15,503  |INFO    |Read from COM12:
+28
+
+2022-01-28 15:21:15,613  |INFO    |Read from COM12:
+
+$ 
+2022-01-28 15:21:15,614  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:15,723  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+ipwr:
+
+2022-01-28 15:21:15,834  |INFO    |Read from COM12:
+FBG_0_0:0 :  46.204 dB
+FBG_0_0:1 :  46.027 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  46.060 dB
+FBG_1_0:1 :  45.918 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x0072000F (28.91 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x0074490F (29.00 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x0067DA90 (31.52 dB)
+MCB_POST_CB_1_0_1: Power = 0x006A2710 (31.61 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+$ 
+2022-01-28 15:21:16,341  |INFO    |Send to RU: b'trdc on 1\n\r'
+2022-01-28 15:21:16,448  |INFO    |Read from COM12:
+trdc on 1
+
+
+2022-01-28 15:21:16,556  |INFO    |Read from COM12:
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+AddressInfo: clientRef=1, serverRef=50
+
+$ 
+2022-01-28 15:21:16,557  |INFO    |Send to RU: b'trdc on 3\n\r'
+2022-01-28 15:21:16,667  |INFO    |Read from COM12:
+trdc on 3
+
+
+2022-01-28 15:21:16,776  |INFO    |Read from COM12:
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+AddressInfo: clientRef=3, serverRef=50
+
+$ 
+2022-01-28 15:21:16,776  |INFO    |Send to RU: b'trdc on 5\n\r'
+2022-01-28 15:21:16,886  |INFO    |Read from COM12:
+trdc on 5
+
+
+2022-01-28 15:21:16,995  |INFO    |Read from COM12:
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+AddressInfo: clientRef=5, serverRef=50
+
+$ 
+2022-01-28 15:21:16,995  |INFO    |Send to RU: b'trdc on 7\n\r'
+2022-01-28 15:21:17,104  |INFO    |Read from COM12:
+trdc on 7
+
+
+2022-01-28 15:21:17,213  |INFO    |Read from COM12:
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+AddressInfo: clientRef=7, serverRef=50
+
+$ 
+2022-01-28 15:21:22,223  |INFO    |Send to RU: b'trx power 0\n\r'
+2022-01-28 15:21:22,333  |INFO    |Read from COM12:
+trx power 0
+
+	  txPma                            : -8.68,
+	  txDpdPma                         : -12.55,
+	  txPmb                            : -8.68,
+	  txTorPmb                         : -8.68,
+	  rfPower                          : 45.82[dBm],
+	  avgIMpa0                         : 1960[mAmp],
+	  pmErrCounterTotal                : 0
+	  pmErrCounterLast                 : 0
+	  pmDpdIrqStat                     : 0x00000000
+
+
+$ 
+2022-01-28 15:21:22,333  |INFO    |Send to RU: b'trx power 1\n\r'
+2022-01-28 15:21:22,442  |INFO    |Read from COM12:
+trx power 1
+
+	  txPma                            : -8.58,
+	  txDpdPma                         : -12.36,
+	  txPmb                            : -8.58,
+	  txTorPmb                         : -8.57,
+	  rfPower                          : 45.93[dBm],
+	  avgIMpa0                         : 2000[mAmp],
+	  pmErrCounterTotal                : 0
+	  pmErrCounterLast                 : 0
+	  pmDpdIrqStat                     : 0x00000000
+
+
+$ 
+2022-01-28 15:21:22,443  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:22,551  |INFO    |Read from COM12:
+ts r Rx:A
+
+
+2022-01-28 15:21:22,662  |INFO    |Read from COM12:
+28.5
+
+$ 
+2022-01-28 15:21:22,662  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:22,772  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+ipwr:
+
+2022-01-28 15:21:22,883  |INFO    |Read from COM12:
+FBG_0_0:0 :  69.142 dB
+FBG_0_0:1 :  67.857 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  79.835 dB
+FBG_1_0:1 :  76.745 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x00600C15 (46.23 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x00692F18 (55.65 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x005ABA96 (48.99 dB)
+MCB_POST_CB_1_0_1: Power = 0x0062B319 (58.39 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+$ 
+2022-01-28 15:21:23,088  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:23,200  |INFO    |Read from COM12:
+ts r Rx:A
+
+28.5
+
+2022-01-28 15:21:23,311  |INFO    |Read from COM12:
+
+$ 
+2022-01-28 15:21:23,312  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:23,422  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+ipwr:
+
+2022-01-28 15:21:23,531  |INFO    |Read from COM12:
+FBG_0_0:0 :  69.100 dB
+FBG_0_0:1 :  67.853 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  79.845 dB
+FBG_1_0:1 :  76.750 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x005FA795 (46.21 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x00695D98 (55.66 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x005A1896 (48.96 dB)
+MCB_POST_CB_1_0_1: Power = 0x0062C599 (58.39 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+$ 
+2022-01-28 15:21:23,734  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:23,842  |INFO    |Read from COM12:
+ts r Rx:A
+
+
+2022-01-28 15:21:23,952  |INFO    |Read from COM12:
+28.5
+
+$ 
+2022-01-28 15:21:23,953  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:24,062  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+
+2022-01-28 15:21:24,171  |INFO    |Read from COM12:
+ipwr:
+FBG_0_0:0 :  69.129 dB
+FBG_0_0:1 :  67.855 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  79.843 dB
+FBG_1_0:1 :  76.748 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+
+2022-01-28 15:21:24,280  |INFO    |Read from COM12:
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x00610E95 (46.27 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x00692F98 (55.65 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x005A9216 (48.98 dB)
+MCB_POST_CB_1_0_1: Power = 0x0062BF99 (58.39 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+$ 
+2022-01-28 15:21:24,484  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:24,594  |INFO    |Read from COM12:
+ts r Rx:A
+
+
+2022-01-28 15:21:24,702  |INFO    |Read from COM12:
+28.5
+
+$ 
+2022-01-28 15:21:24,703  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:24,812  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+
+2022-01-28 15:21:24,921  |INFO    |Read from COM12:
+ipwr:
+FBG_0_0:0 :  69.145 dB
+FBG_0_0:1 :  67.845 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  79.843 dB
+FBG_1_0:1 :  76.747 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+
+2022-01-28 15:21:25,032  |INFO    |Read from COM12:
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x0060D615 (46.26 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x00693598 (55.66 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x005A5596 (48.97 dB)
+MCB_POST_CB_1_0_1: Power = 0x0062AB19 (58.39 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+$ 
+2022-01-28 15:21:25,238  |INFO    |Send to RU: b'ts r Rx:A\n\r'
+2022-01-28 15:21:25,347  |INFO    |Read from COM12:
+ts r Rx:A
+
+
+2022-01-28 15:21:25,456  |INFO    |Read from COM12:
+28.5
+
+$ 
+2022-01-28 15:21:25,456  |INFO    |Send to RU: b'xenon:0 rxpwr\n\r'
+2022-01-28 15:21:25,566  |INFO    |Read from COM12:
+xenon:0 rxpwr
+
+
+2022-01-28 15:21:25,677  |INFO    |Read from COM12:
+ipwr:
+FBG_0_0:0 :  69.087 dB
+FBG_0_0:1 :  67.815 dB
+FBG_0_0:2 :  -1000.000 dB
+FBG_0_0:3 :  -1000.000 dB
+FBG_0_0:4 :  -1000.000 dB
+FBG_0_0:5 :  -1000.000 dB
+FBG_0_1:0 :  -1000.000 dB
+FBG_0_1:1 :  -1000.000 dB
+FBG_0_1:2 :  -1000.000 dB
+FBG_0_1:3 :  -1000.000 dB
+FBG_0_1:4 :  -1000.000 dB
+FBG_0_1:5 :  -1000.000 dB
+FBG_1_0:0 :  79.842 dB
+FBG_1_0:1 :  76.746 dB
+FBG_1_0:2 :  -1000.000 dB
+FBG_1_0:3 :  -1000.000 dB
+FBG_1_0:4 :  -1000.000 dB
+FBG_1_0:5 :  -1000.000 dB
+FBG_1_1:0 :  -1000.000 dB
+FBG_1_1:1 :  -1000.000 dB
+FBG_1_1:2 :  -1000.000 dB
+FBG_1_1:3 :  -1000.000 dB
+FBG_1_1:4 :  -1000.000 dB
+FBG_1_1:5 :  -1000.000 dB
+
+2022-01-28 15:21:25,788  |INFO    |Read from COM12:
+wpwr:
+MCB_PRE_CB_0_0_0:  Power = 0x00000000
+MCB_PRE_CB_0_0_1:  Power = 0x00000000
+MCB_PRE_CB_0_1_0:  Power = 0x00000000
+MCB_PRE_CB_0_1_1:  Power = 0x00000000
+MCB_PRE_CB_1_0_0:  Power = 0x00607B15 (46.25 dB)
+MCB_PRE_CB_1_0_1:  Power = 0x00691E18 (55.65 dB)
+MCB_PRE_CB_1_1_0:  Power = 0x00000000
+MCB_PRE_CB_1_1_1:  Power = 0x00000000
+MCB_POST_CB_0_0_0: Power = 0x00000000
+MCB_POST_CB_0_0_1: Power = 0x00000000
+MCB_POST_CB_0_1_0: Power = 0x00000000
+MCB_POST_CB_0_1_1: Power = 0x00000000
+MCB_POST_CB_1_0_0: Power = 0x0059DA16 (48.95 dB)
+MCB_POST_CB_1_0_1: Power = 0x0062B319 (58.39 dB)
+MCB_POST_CB_1_1_0: Power = 0x00000000
+MCB_POST_CB_1_1_1: Power = 0x00000000
+
+$ 
+2022-01-28 15:21:25,993  |INFO    |Send to RU: b'trdc release 1\n\r'
+2022-01-28 15:21:26,105  |INFO    |Read from COM12:
+trdc release 1
+
+
+2022-01-28 15:21:26,215  |INFO    |Read from COM12:
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+AddressInfo: clientRef=1, serverRef=50
+
+$ 
+2022-01-28 15:21:26,215  |INFO    |Send to RU: b'trdc release 2\n\r'
+2022-01-28 15:21:26,323  |INFO    |Read from COM12:
+trdc release 2
+
+
+2022-01-28 15:21:26,430  |INFO    |Read from COM12:
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+AddressInfo: clientRef=2, serverRef=50
+
+$ 
+2022-01-28 15:21:26,431  |INFO    |Send to RU: b'trdc release 3\n\r'
+2022-01-28 15:21:26,539  |INFO    |Read from COM12:
+trdc release 3
+
+
+2022-01-28 15:21:26,647  |INFO    |Read from COM12:
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+AddressInfo: clientRef=3, serverRef=50
+
+$ 
+2022-01-28 15:21:26,648  |INFO    |Send to RU: b'trdc release 4\n\r'
+2022-01-28 15:21:26,759  |INFO    |Read from COM12:
+trdc release 4
+
+
+2022-01-28 15:21:26,870  |INFO    |Read from COM12:
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+AddressInfo: clientRef=4, serverRef=50
+
+$ 
+2022-01-28 15:21:26,871  |INFO    |Send to RU: b'trdc release 5\n\r'
+2022-01-28 15:21:26,979  |INFO    |Read from COM12:
+trdc release 5
+
+
+2022-01-28 15:21:27,088  |INFO    |Read from COM12:
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+AddressInfo: clientRef=5, serverRef=50
+
+$ 
+2022-01-28 15:21:27,088  |INFO    |Send to RU: b'trdc release 6\n\r'
+2022-01-28 15:21:27,198  |INFO    |Read from COM12:
+trdc release 6
+
+
+2022-01-28 15:21:27,307  |INFO    |Read from COM12:
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+AddressInfo: clientRef=6, serverRef=50
+
+$ 
+2022-01-28 15:21:27,307  |INFO    |Send to RU: b'trdc release 7\n\r'
+2022-01-28 15:21:27,415  |INFO    |Read from COM12:
+trdc release 7
+
+
+2022-01-28 15:21:27,525  |INFO    |Read from COM12:
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+AddressInfo: clientRef=7, serverRef=50
+
+$ 
+2022-01-28 15:21:27,525  |INFO    |Send to RU: b'trdc release 8\n\r'
+2022-01-28 15:21:27,634  |INFO    |Read from COM12:
+trdc release 8
+
+
+2022-01-28 15:21:27,742  |INFO    |Read from COM12:
+
+Deprecated command with default serverRef used only for single mode
+
+Req itc_msg, AddressInfo: serverRef=50
+AddressInfo: clientRef=8, serverRef=50
+
+$ 
+2022-01-28 15:21:27,742  |INFO    |COM12 is closed
